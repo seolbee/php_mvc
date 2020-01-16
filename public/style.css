@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+li{
+    text-decoration: none;
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: #bbb;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+}
+
+nav{
+    width: 15%;
+    background-color: rgba(245,245,245, .9);
+    height: 100%;
+    position: fixed;
+    padding: 0px 15px;
+}
+
+.profile{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile > p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.profile > p > a{
+    color: #000;
+}
+
+.active{
+    border-radius: 60px;
+    background-color: #fff;
+}
+
+.active > a > i{
+    color: #00a336;
+}
+
+.active > a{
+    color: #333;
+}
+
+.profile > img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+ul{
+    margin-top: 50px;
+}
+
+ul > li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15%;
+    margin: 10px 0;
+}
+
+ul > li > a{
+    font-size: 20px;
+    color: #aaa;
+}
+
+ul > li:hover{
+    background-color: #fff;
+    border-radius: 60px;
+}
+
+ul > li:hover > a{
+    color: #000;
+}
+
+ul > li:hover a > i{
+    color: #00a336;
+}
+
+ul > li > a > i{
+    font-size: 25px;
+    padding-right: 20%;
+}
+
+.sns{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.sns > i {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.sns > i:hover{
+    transform: scale(1.2);
+    transition: all 0.6s;
+    color: #aaa;
+}
+
+header{
+    width: 85%;
+    margin-left: 15%;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,.2);
+    padding: 5px 10px;
+}
+
+.search{
+    display: inline-block;
+    border: 1px solid rgba(0, 163, 54, .6);
+    position: relative;
+    top: -5px;
+    border-radius: 30px;
+    padding: 3px 10px;
+    width: 20%;
+}
+
+.search > input{
+    border: none;
+    height: 30px;
+    width: 90%;
+}
+
+.search > button > i{
+    color: rgba(0, 163, 54, .6);
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.myProflie{
+    display: inline-block;
+    margin-left: 70%;
+    line-height: 60px;
+}
+
+.myProflie > a > i {
+    font-size: 25px;
+    padding: 10px 15px;
+}
+
+.myProflie > a > i:hover{
+    color: #00a336;
+}
+
+.myProflie > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+i.active{
+    color:#00a336;
+}
+
+.main{
+    width: 85%;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.content{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.content > p{
+    font-size: 30px;
+}
+
+.content > form{
+    padding-left: 10px;
+}
+
+.inputLabel{
+    margin: 30px 0;
+}
+
+.inputLabel > label{
+    width: 100%;
+    display: block;
+    margin: 8px 0px;
+}
+
+.inputLabel > input{
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.inputLabel > textarea{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.inputLabel > select{
+    width: 200px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#btn{
+    padding: 7px 15px;
+    background:none;
+    border: 1px solid #00a336;
+    border-radius: 5px;
+    color: #00a336;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#btn:hover{
+    background-color: #00a336;
+    color: #fff;
+}
+
+.contain{
+    /* background-image: url("/image/background2.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px; */
+
+    width: 80%;
+    margin: 80px auto;
+    margin-bottom: 50px;
+}
+
+.contain > .title{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.contain > span{
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.box{
+    width: 80%;
+    margin: 5px auto;
+}
+
+.box > span{
+    font-size: 20px;
+    border-bottom: 2px solid #00a336;
+    padding: 5px 0;
+}
+
+.recommend{
+    display: grid;
+    grid-gap : 50px;
+    margin-top: 50px;
+}
+
+.blog_template2{
+    display: grid;
+    width: 100%;
+    grid-template-columns : 70% 30%;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog_template2:hover{
+    box-shadow: 0px 0px 2px 1px rgba(0, 163, 54, .6);
+}
+
+.blog_template{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog_template > img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.p_box{
+    padding-left: 20px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.p_box > a{
+    color: #000;
+}
+
+.number{
+    padding-right: 20px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 80px;
+    top: 70%;
+}
+
+i.arrow{
+    color: #eee;
+    cursor: pointer;
+}
+
+i.arrow:hover{
+    color: #00a336;
+    transition: all 0.5s;
+}
+
+.left{
+    left: 18%;
+}
+
+.right{
+    right:3%;
+}
+
+.title{
+    display: flex;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: right;
+}
+
+.subtitle > p{
+    display: flex;
+    flex: 1;
+}
+
+.subtitle > p:first-child{
+    justify-content: end;
+}
+
+.subtitle > p:last-child{
+    justify-content: start;
+}
+
+.p_box2{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.p_box2 > .title_box {
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(240,240,240);
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-bottom : 20px;
+}
+
+.p_box2 > .title_box > .title{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.p_box2 > .title_box > .subtitle > p{
+    text-align: right;
+}
+
+.p_box2 > p{
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.category {
+    padding: 20px;
+    background-color: rgba(250,250,250,.35);
+    border-top: 1px solid rgba(250,250,250,1);
+}
+
+p.sub_title{
+    font-size: 30px;
+}
+
+.contain > a{
+    position: relative;
+    top: 20px;
+}
+
+.password_update{
+    margin-bottom: 20px;
+}
+
+.search > button{
+    background: none;
+    border: none;
+}

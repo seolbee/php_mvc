@@ -33,4 +33,18 @@ class DB
         $cnt = $q->execute($param);
         return $cnt;
     }
+
+    public static function StartAndGO($msg, $link){
+        echo "<script>";
+        echo "alert('$msg');";
+        echo "location.href='$link'";
+        echo "</script>";
+    }
+
+    public static function StopAndBack($msg){
+        echo "<script>";
+        echo "alert('$msg');";
+        echo "history.back();";
+        echo "</script>";
+    }
 }
